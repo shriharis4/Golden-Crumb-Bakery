@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-yellow: #FFF4CC;
+  --color-secondary-yellow: #FFE8A3;
+  --color-dark-brown: #4A2C2A;
+  --color-caramel-brown: #8B5E3C;
+  --color-cream: #FFF8DC;
+  --color-whatsapp-green: #25D366;
+  
+  --font-family-fustat: 'Fustat', system-ui, sans-serif;
+  --font-family-inter: 'Inter', system-ui, sans-serif;
+  --font-family-noto: 'Noto Sans', system-ui, sans-serif;
+  --font-family-schibsted: 'Schibsted Grotesk', system-ui, sans-serif;
+  
+  --radius-soft: 12px;
+  --radius-medium: 15px;
+  --radius-large: 18px;
+  
+  --shadow-soft: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-medium: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+body {
+  @apply bg-primary-yellow text-dark-brown;
+  font-family: 'Inter', system-ui, sans-serif;
+}
