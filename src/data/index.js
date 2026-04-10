@@ -6,6 +6,8 @@ export const cakeCategories = [
   "Cupcakes"
 ];
 
+const FALLBACK_IMAGE = "https://images.unsplash.com/photo-1578985545062-69928b1d958f?w=600&h=450&fit=crop";
+
 export const cakes = [
   {
     id: 1,
@@ -13,7 +15,7 @@ export const cakes = [
     title: "Chocolate Truffle Delight",
     price: "₹699",
     description: "Rich chocolate ganache cake with Belgian chocolate layers and cocoa dusting",
-    image: "https://images.unsplash.com/photo-1578985545062-69928b1d958f?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-9hQkJkrpDgY?w=600&h=450&fit=crop"
   },
   {
     id: 2,
@@ -21,7 +23,7 @@ export const cakes = [
     title: "Strawberry Cream Dream",
     price: "₹599",
     description: "Fresh strawberry layers with vanilla cream and white chocolate drizzle",
-    image: "https://images.unsplash.com/photo-1563729784474-d77dbb973a9e?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1565958011743-37001d2a5675?w=600&h=450&fit=crop"
   },
   {
     id: 3,
@@ -29,7 +31,7 @@ export const cakes = [
     title: "Rainbow Celebration Cake",
     price: "₹799",
     description: "Colorful rainbow layers with premium buttercream and edible sparkles",
-    image: "https://images.unsplash.com/photo-1563805042-7684c019e5cb?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1558961363-f8fae0fb809a?w=600&h=450&fit=crop"
   },
   {
     id: 4,
@@ -37,7 +39,7 @@ export const cakes = [
     title: "Pineapple Fresh Cake",
     price: "₹549",
     description: "Fresh pineapple chunks with light vanilla sponge and cream frosting",
-    image: "https://images.unsplash.com/photo-1558961363-f8fae0fb809a?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=600&h=450&fit=crop"
   },
   {
     id: 5,
@@ -45,7 +47,7 @@ export const cakes = [
     title: "Red Velvet Royale",
     price: "₹749",
     description: "Classic red velvet with cream cheese frosting and ruby red berries",
-    image: "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1587668178277-295251f900ce?w=600&h=450&fit=crop"
   },
   {
     id: 6,
@@ -53,7 +55,7 @@ export const cakes = [
     title: "Blueberry Cheesecake",
     price: "₹649",
     description: "Creamy cheesecake topped with fresh blueberries and berry compote",
-    image: "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1524351199678-941a58a3df50?w=600&h=450&fit=crop"
   },
   {
     id: 7,
@@ -61,7 +63,7 @@ export const cakes = [
     title: "Royal White Wedding",
     price: "₹3,499",
     description: "Elegant three-tier white fondant cake with sugar flowers and gold accents",
-    image: "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1563206767-5b1d97289374?w=600&h=450&fit=crop"
   },
   {
     id: 8,
@@ -69,7 +71,7 @@ export const cakes = [
     title: "Rose Gold Elegance",
     price: "₹4,499",
     description: "Luxurious rose gold metallic finish with fresh rose arrangements",
-    image: "https://images.unsplash.com/photo-1589350717742-4c37799458bb?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=600&h=450&fit=crop"
   },
   {
     id: 9,
@@ -77,15 +79,15 @@ export const cakes = [
     title: "Floral Cascade Wedding",
     price: "₹3,999",
     description: "Stunning cascade of fresh edible flowers on premium vanilla fondant",
-    image: "https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1528642474493-227675b32d01?w=600&h=450&fit=crop"
   },
   {
     id: 10,
     category: "Wedding Cakes",
-    title: "Pearl塔 Wedding Cake",
+    title: "Pearl White Wedding",
     price: "₹4,999",
     description: "Exquisite white cake adorned with edible pearls and cascading blooms",
-    image: "https://images.unsplash.com/photo-1623428454614-abaf00244e52?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1626803775151-61d756612fcd?w=600&h=450&fit=crop"
   },
   {
     id: 11,
@@ -93,7 +95,7 @@ export const cakes = [
     title: "Photo Print Cake",
     price: "₹899",
     description: "Custom edible photo printing on your choice of cake base and flavor",
-    image: "https://images.unsplash.com/photo-1574658714555-ec056f730efa?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1563729768601-d8cdc1395b97?w=600&h=450&fit=crop"
   },
   {
     id: 12,
@@ -101,7 +103,7 @@ export const cakes = [
     title: "Theme Designer Cake",
     price: "₹999",
     description: "Custom themed cake for kids - characters, superheroes, cartoons and more",
-    image: "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1563237021-d45a1c4d9dc2?w=600&h=450&fit=crop"
   },
   {
     id: 13,
@@ -117,7 +119,7 @@ export const cakes = [
     title: "Butterscotch Caramel",
     price: "₹699",
     description: "Rich butterscotch cake with caramel drizzle and crunchy nuts",
-    image: "https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&h=450&fit=crop"
   },
   {
     id: 15,
@@ -125,7 +127,7 @@ export const cakes = [
     title: "Vanilla Butter Cupcakes",
     price: "₹50",
     description: "Classic vanilla cupcakes with swirl buttercream frosting (per piece)",
-    image: "https://images.unsplash.com/photo-1558961363-f8fae0fb809a?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=600&h=450&fit=crop"
   },
   {
     id: 16,
@@ -133,7 +135,7 @@ export const cakes = [
     title: "Chocolate Truffle Cupcakes",
     price: "₹55",
     description: "Rich chocolate cupcakes with chocolate ganache topping (per piece)",
-    image: "https://images.unsplash.com/photo-1578985545062-69928b1d958f?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1486427944544-d2c6128a44c1?w=600&h=450&fit=crop"
   },
   {
     id: 17,
@@ -141,7 +143,7 @@ export const cakes = [
     title: "Red Velvet Cupcakes",
     price: "₹55",
     description: "Classic red velvet with cream cheese frosting (per piece)",
-    image: "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1605296830714-7c5287d0eb38?w=600&h=450&fit=crop"
   },
   {
     id: 18,
@@ -149,7 +151,7 @@ export const cakes = [
     title: "Strawberry Cupcakes",
     price: "₹50",
     description: "Fresh strawberry cupcakes with strawberry cream topping (per piece)",
-    image: "https://images.unsplash.com/photo-1563729784474-d77dbb973a9e?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1617305855058-336d24456869?w=600&h=450&fit=crop"
   }
 ];
 
@@ -157,22 +159,22 @@ export const galleryImages = [
   {
     id: 1,
     category: "birthday",
-    title: "Chocolate Berry Celebration",
-    description: "Rich chocolate cake topped with fresh berries for birthday celebrations",
-    image: "https://images.unsplash.com/photo-1578985545062-69928b1d958f?w=600&h=450&fit=crop"
+    title: "Chocolate Delight Cake",
+    description: "Rich chocolate cake layered with smooth ganache",
+    image: "https://images.unsplash.com/photo-9hQkJkrpDgY?w=600&h=450&fit=crop"
   },
   {
     id: 2,
     category: "wedding",
     title: "Elegant White Wedding",
     description: "Classic three-tier wedding cake with delicate sugar flowers",
-    image: "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=600&h=450&fit=crop"
   },
   {
     id: 3,
     category: "custom",
-    title: "Custom Photo Cake",
-    description: "Personalized photo cake with edible printing for special memories",
+    title: "Designer Custom Cake",
+    description: "Artistically designed custom cake for unique celebrations",
     image: "https://images.unsplash.com/photo-1574658714555-ec056f730efa?w=600&h=450&fit=crop"
   },
   {
@@ -180,7 +182,7 @@ export const galleryImages = [
     category: "birthday",
     title: "Kids Party Special",
     description: "Colorful birthday cake with sprinkles and confetti for little celebrations",
-    image: "https://images.unsplash.com/photo-1563805042-7684c019e5cb?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1563237021-d45a1c4d9dc2?w=600&h=450&fit=crop"
   },
   {
     id: 5,
@@ -192,44 +194,44 @@ export const galleryImages = [
   {
     id: 6,
     category: "custom",
-    title: "Designer Custom Cake",
-    description: "Artistically designed custom cake for unique celebrations",
-    image: "https://images.unsplash.com/photo-1563729784474-d77dbb973a9e?w=600&h=450&fit=crop"
+    title: "Black Forest Special",
+    description: "Classic black forest with cherry and chocolate shavings",
+    image: "https://images.unsplash.com/photo-1606890737304-7b7b26ee8c3e?w=600&h=450&fit=crop"
   },
   {
     id: 7,
     category: "birthday",
     title: "Premium Chocolate Delight",
     description: "Decadent chocolate cake with ganache and fresh berries",
-    image: "https://images.unsplash.com/photo-1606890737304-7b7b26ee8c3e?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-9hQkJkrpDgY?w=600&h=450&fit=crop"
   },
   {
     id: 8,
     category: "wedding",
     title: "Classic White Elegance",
     description: "Timeless white wedding cake with elegant floral decorations",
-    image: "https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=600&h=450&fit=crop"
   },
   {
     id: 9,
     category: "birthday",
-    title: "Vanilla Dream Cake",
-    description: "Soft vanilla cake with creamy frosting and fresh fruit toppings",
-    image: "https://images.unsplash.com/photo-1558961363-f8fae0fb809a?w=600&h=450&fit=crop"
+    title: "Vanilla Cream Cake",
+    description: "Soft vanilla cream cake with elegant finish",
+    image: "https://images.unsplash.com/photo-1562440499-64c9a111f713?w=600&h=450&fit=crop"
   },
   {
     id: 10,
     category: "custom",
     title: "Butterscotch Bliss",
     description: "Rich butterscotch cake with caramel drizzle and nuts",
-    image: "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1559620192-032c4bc4674e?w=600&h=450&fit=crop"
   },
   {
     id: 11,
     category: "birthday",
     title: "Chocolate Sprinkles Cake",
     description: "Chocolate cake loaded with colorful sprinkles for fun celebrations",
-    image: "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1563729768601-d8cdc1395b97?w=600&h=450&fit=crop"
   },
   {
     id: 12,
@@ -243,28 +245,28 @@ export const galleryImages = [
     category: "birthday",
     title: "Mango Delight Cake",
     description: "Fresh mango cake with mango cream and tropical fruit toppings",
-    image: "https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=600&h=450&fit=crop"
   },
   {
     id: 14,
     category: "custom",
     title: "Coffee Walnut Cake",
     description: "Premium coffee cake with crunchy walnuts and coffee frosting",
-    image: "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1626804475394-6f3c3f7e9c0e?w=600&h=450&fit=crop"
   },
   {
     id: 15,
     category: "birthday",
-    title: "Funfetti Celebration Cake",
-    description: "Colorful funfetti cake with rainbow sprinkles and buttercream",
-    image: "https://images.unsplash.com/photo-1563805042-7684c019e5cb?w=600&h=450&fit=crop"
+    title: "Fresh Fruit Cake",
+    description: "Fresh fruit cake topped with seasonal berries",
+    image: "https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=600&h=450&fit=crop"
   },
   {
     id: 16,
     category: "wedding",
-    title: "Rustic Wedding Cake",
-    description: "Beautiful rustic cake with fresh flowers and elegant details",
-    image: "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=600&h=450&fit=crop"
+    title: "Designer Celebration Cake",
+    description: "Elegant designer cake for weddings and special occasions",
+    image: "https://images.unsplash.com/photo-1563206767-5b1d97289374?w=600&h=450&fit=crop"
   }
 ];
 
@@ -311,7 +313,7 @@ export const categories = [
     id: 2,
     name: "Wedding Cakes",
     icon: "💒",
-    image: "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=500&h=350&fit=crop",
+    image: "https://images.unsplash.com/photo-1563206767-5b1d97289374?w=500&h=350&fit=crop",
     description: "Elegant wedding cakes for your special day"
   },
   {
@@ -325,7 +327,7 @@ export const categories = [
     id: 4,
     name: "Cupcakes",
     icon: "🧁",
-    image: "https://images.unsplash.com/photo-1558961363-f8fae0fb809a?w=500&h=350&fit=crop",
+    image: "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=500&h=350&fit=crop",
     description: "Delicious cupcakes perfect for any occasion"
   }
 ];
@@ -349,3 +351,4 @@ export const businessInfo = {
 };
 
 export const WHATSAPP_NUMBER = "918088366098";
+export { FALLBACK_IMAGE };

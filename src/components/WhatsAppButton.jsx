@@ -9,7 +9,7 @@ const WhatsAppButton = ({ message, className = '', variant = 'inline', children 
         href={whatsappLink} 
         target="_blank" 
         rel="noopener noreferrer" 
-        className="fixed bottom-6 right-6 bg-whatsapp-green text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 z-50"
+        className="fixed bottom-6 right-6 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 z-50 border-2 border-white"
         aria-label="Chat with us on WhatsApp"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
@@ -21,7 +21,7 @@ const WhatsAppButton = ({ message, className = '', variant = 'inline', children 
   }
 
   return (
-    <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className={`inline-flex items-center gap-2 bg-caramel-brown text-white px-4 py-2 rounded-xl hover:bg-dark-brown transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 ${className}`}>
+    <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className={`inline-flex items-center gap-2 bg-[#8B5E3C] text-white px-4 py-2 rounded-xl hover:bg-[#4A2C2A] transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 border-2 border-[#8B5E3C] hover:border-[#4A2C2A] ${className}`}>
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
         <path d="M20.1 3.9C17.9 1.7 15 .5 12 .5 5.8.5.7 5.6.7 11.9c0 2 .5 3.9 1.5 5.6L.6 23.4l6-1.6c1.6.9 3.5 1.3 5.4 1.3 6.3 0 11.4-5.1 11.4-11.4-.1-2.3-.4-3.5-1.2-4.8z"/>
       </svg>
