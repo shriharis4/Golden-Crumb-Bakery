@@ -15,7 +15,7 @@ export const cakes = [
     title: "Chocolate Truffle Delight",
     price: "₹699",
     description: "Rich chocolate ganache cake with Belgian chocolate layers and cocoa dusting",
-    image: "https://images.unsplash.com/photo-9hQkJkrpDgY?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587"
   },
   {
     id: 2,
