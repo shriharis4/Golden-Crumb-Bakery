@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import { createWhatsAppLink, FALLBACK_IMAGE } from '../utils/whatsapp';
+import { createWhatsAppLink } from '../utils/whatsapp';
 import { galleryImages } from '../data';
+import { fallbackImage } from '../utils/images';
 import ScrollAnimation from '../components/ScrollAnimation';
 
 const Gallery = () => {
@@ -50,7 +51,7 @@ const Gallery = () => {
                 src={selectedImage.image} 
                 alt={selectedImage.title}
                 className="w-full h-auto max-h-[60vh] object-contain"
-                onError={(e) => { e.target.src = FALLBACK_IMAGE; }}
+                onError={(e) => { e.target.src = fallbackImage; }}
                 loading="lazy"
               />
               <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-full border-2 border-[#FFE066]">
@@ -125,8 +126,8 @@ const Gallery = () => {
                   <img
                     src={image.image}
                     alt={image.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    onError={(e) => { e.target.src = FALLBACK_IMAGE; }}
+                    className="w-full h-64 object-cover rounded-2xl transition-transform duration-700 group-hover:scale-110"
+                    onError={(e) => { e.target.src = fallbackImage; }}
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#4A2C2A]/70 via-[#4A2C2A]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { cakes, cakeCategories, FALLBACK_IMAGE } from '../data';
+import { cakes, cakeCategories } from '../data';
+import { fallbackImage } from '../utils/images';
 import WhatsAppButton from '../components/WhatsAppButton';
 import ScrollAnimation from '../components/ScrollAnimation';
 
@@ -53,8 +54,8 @@ const Cakes = () => {
                   <img
                     src={cake.image}
                     alt={cake.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    onError={(e) => { e.target.src = FALLBACK_IMAGE; }}
+                    className="w-full h-60 object-cover rounded-2xl transition-transform duration-700 group-hover:scale-110"
+                    onError={(e) => { e.target.src = fallbackImage; }}
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#4A2C2A]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { categories, FALLBACK_IMAGE } from '../data';
+import { categories } from '../data';
+import { fallbackImage } from '../utils/images';
 import ScrollAnimation from './ScrollAnimation';
 
 const Categories = () => {
@@ -31,8 +32,8 @@ const Categories = () => {
                   <img 
                     src={category.image} 
                     alt={category.name}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    onError={(e) => { e.target.src = FALLBACK_IMAGE; }}
+                    className="w-full h-56 object-cover rounded-2xl transition-transform duration-700 group-hover:scale-110"
+                    onError={(e) => { e.target.src = fallbackImage; }}
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#4A2C2A]/80 via-[#4A2C2A]/40 to-transparent" />

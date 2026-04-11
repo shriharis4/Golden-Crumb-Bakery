@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import WhatsAppButton from './WhatsAppButton';
-import { FALLBACK_IMAGE } from '../data';
+import { fallbackImage } from '../utils/images';
 
 const HeroSection = () => {
   const confettiItems = [
@@ -98,10 +98,10 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-[#FFE066] to-[#E6C442] rounded-3xl transform rotate-3 animate-pulse-soft" />
               <div className="absolute inset-4 bg-white rounded-2xl shadow-2xl overflow-hidden animate-scale-in">
                 <img
-                  src="https://images.unsplash.com/photo-1578985545062-69928b1d958f?w=600&h=600&fit=crop"
+                  src={fallbackImage}
                   alt="Delicious cake"
                   className="w-full h-full object-cover"
-                  onError={(e) => { e.target.src = FALLBACK_IMAGE; }}
+                  onError={(e) => { e.target.src = fallbackImage; }}
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#4A2C2A]/30 to-transparent" />

@@ -1,4 +1,5 @@
-import { testimonials, FALLBACK_IMAGE } from '../data';
+import { testimonials } from '../data';
+import { fallbackImage } from '../utils/images';
 import ScrollAnimation from './ScrollAnimation';
 
 const Testimonials = () => {
@@ -39,7 +40,7 @@ const Testimonials = () => {
                     src={testimonial.image} 
                     alt={testimonial.name}
                     className="w-14 h-14 rounded-full object-cover ring-4 ring-[#FFE066]"
-                    onError={(e) => { e.target.src = FALLBACK_IMAGE; }}
+                    onError={(e) => { e.target.src = fallbackImage; }}
                   />
                   <div>
                     <h4 className="font-Fustat font-semibold text-[#4A2C2A]">{testimonial.name}</h4>

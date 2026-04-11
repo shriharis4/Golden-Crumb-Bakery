@@ -3,7 +3,8 @@
     "allow": [
       "Bash(taskkill /F /IM node.exe)",
       "Bash(npm run:*)",
-      "Bash(exit 0)"
+      "Bash(exit 0)",
+      "WebSearch"
     ]
   }
 }
