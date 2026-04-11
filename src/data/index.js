@@ -63,7 +63,7 @@ export const cakes = [
     title: "Royal White Wedding",
     price: "₹3,499",
     description: "Elegant three-tier white fondant cake with sugar flowers and gold accents",
-    image: "https://images.unsplash.com/photo-1563206767-5b1d97289374?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1535254973040-607b474cb50d"
   },
   {
     id: 8,
@@ -79,7 +79,7 @@ export const cakes = [
     title: "Floral Cascade Wedding",
     price: "₹3,999",
     description: "Stunning cascade of fresh edible flowers on premium vanilla fondant",
-    image: "https://images.unsplash.com/photo-1528642474493-227675b32d01?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1521305916504-4a1121188589"
   },
   {
     id: 10,
