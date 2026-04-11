@@ -87,7 +87,7 @@ export const cakes = [
     title: "Pearl White Wedding",
     price: "₹4,999",
     description: "Exquisite white cake adorned with edible pearls and cascading blooms",
-    image: "https://images.unsplash.com/photo-1626803775151-61d756612fcd?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1605478371310-a9f1e96b4ff4=crop"
   },
   {
     id: 11,
@@ -103,7 +103,7 @@ export const cakes = [
     title: "Theme Designer Cake",
     price: "₹999",
     description: "Custom themed cake for kids - characters, superheroes, cartoons and more",
-    image: "https://images.unsplash.com/photo-1563237021-d45a1c4d9dc2?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1599785209796-786432b228bc=crop"
   },
   {
     id: 13,
