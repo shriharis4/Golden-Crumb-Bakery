@@ -23,7 +23,7 @@ export const cakes = [
     title: "Strawberry Cream Dream",
     price: "₹599",
     description: "Fresh strawberry layers with vanilla cream and white chocolate drizzle",
-    image: "https://images.unsplash.com/photo-1565958011743-37001d2a5675?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3"
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ export const cakes = [
     title: "Rainbow Celebration Cake",
     price: "₹799",
     description: "Colorful rainbow layers with premium buttercream and edible sparkles",
-    image: "https://images.unsplash.com/photo-1558961363-f8fae0fb809a?w=600&h=450&fit=crop"
+    image: "https://images.unsplash.com/photo-1603532648955-039310d9ed75"
   },
   {
     id: 4,
