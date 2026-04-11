@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { cakes, cakeCategories } from '../data';
-import { fallbackImage } from '../utils/images';
+import { cakes, cakeCategories, fallbackImage } from '../data';
 import WhatsAppButton from '../components/WhatsAppButton';
 import ScrollAnimation from '../components/ScrollAnimation';
 

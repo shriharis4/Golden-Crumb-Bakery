@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
-import { cakes } from '../data';
-import { fallbackImage } from '../utils/images';
+import { cakes, fallbackImage } from '../data';
 import WhatsAppButton from './WhatsAppButton';
 import ScrollAnimation from './ScrollAnimation';
 

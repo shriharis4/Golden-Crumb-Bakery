@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
-import { categories } from '../data';
-import { fallbackImage } from '../utils/images';
+import { categories, fallbackImage } from '../data';
 import ScrollAnimation from './ScrollAnimation';
 
 const Categories = () => {

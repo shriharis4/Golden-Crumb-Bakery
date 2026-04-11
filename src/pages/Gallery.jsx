@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { createWhatsAppLink } from '../utils/whatsapp';
-import { galleryImages } from '../data';
-import { fallbackImage } from '../utils/images';
+import { galleryImages, fallbackImage } from '../data';
 import ScrollAnimation from '../components/ScrollAnimation';
 
 const Gallery = () => {
