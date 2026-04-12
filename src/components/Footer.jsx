@@ -19,7 +19,7 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className="text-xl font-Fustat font-bold">Cake De Lite</h3>
-                <p className="text-[#FFF8DC]/60 text-xs">Premium Bakery</p>
+                <p className="text-[#FFF8DC]/60 text-xs">Delight In Every Bite</p>
               </div>
             </div>
             <p className="text-[#FFF8DC]/80 text-sm leading-relaxed mb-6">

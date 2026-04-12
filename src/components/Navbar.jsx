@@ -21,7 +21,10 @@ const Navbar = () => {
             <div className="w-10 h-10 bg-[#4A2C2A] rounded-full flex items-center justify-center shadow-lg border-2 border-[#FFE066]">
               <span className="text-[#FFD84D] text-xl">🎂</span>
             </div>
-            <span className="text-xl font-Fustat font-bold text-[#4A2C2A]">Cake De Lite</span>
+            <div className="flex flex-col leading-tight">
+              <span className="text-xl font-Fustat font-bold text-[#4A2C2A]">Cake De Lite</span>
+              <span className="text-[10px] text-[#4A2C2A] font-medium">Delight In Every Bite</span>
+            </div>
           </Link>
 
           <div className="hidden md:flex items-center gap-8">
