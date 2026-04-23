@@ -1,16 +1,22 @@
-import { createContext, useState, useEffect } from 'react';
+import { createContext, useContext, useState, useEffect } from 'react';
 
 const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState(() => {
-    const saved = localStorage.getItem('goldencrumb_cart');
-    return saved ? JSON.parse(saved) : [];
+    if (typeof window !== "undefined") {
+      const saved = localStorage.getItem('goldencrumb_cart');
+      return saved ? JSON.parse(saved) : [];
+    }
+    return [];
   });
+
   const [isCartOpen, setIsCartOpen] = useState(false);
 
   useEffect(() => {
-    localStorage.setItem('goldencrumb_cart', JSON.stringify(cart));
+    if (typeof window !== "undefined") {
+      localStorage.setItem('goldencrumb_cart', JSON.stringify(cart));
+    }
   }, [cart]);
 
   const addToCart = (cake, quantity = 1) => {
@@ -74,4 +80,25 @@ export const CartProvider = ({ children }) => {
       {children}
     </CartContext.Provider>
   );
+};
+
+export const useCart = () => {
+  const context = useContext(CartContext);
+
+  if (!context) {
+    console.error("useCart must be used within CartProvider");
+    return {
+      cart: [],
+      isCartOpen: false,
+      setIsCartOpen: () => {},
+      addToCart: () => {},
+      removeFromCart: () => {},
+      updateQuantity: () => {},
+      clearCart: () => {},
+      getCartTotal: () => 0,
+      getCartCount: () => 0,
+    };
+  }
+
+  return context;
 };
