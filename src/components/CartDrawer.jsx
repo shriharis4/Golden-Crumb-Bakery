@@ -49,7 +49,7 @@ const CartDrawer = () => {
                        src={item.image}
                        alt={item.title}
                        className="w-full h-full object-cover"
-                       onError={(e) => { e.target.src = '/public/img/chocolate-truffle-delight.jpg'; }}
+                       onError={(e) => { e.target.src = '/img/chocolate-truffle-delight.jpg'; }}
                      />
                   </div>
                   <div className="flex-1 min-w-0">
