@@ -1,5 +1,6 @@
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
+
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import CartDrawer from './components/CartDrawer';
@@ -13,8 +14,8 @@ import Checkout from './pages/Checkout';
 
 function App() {
   return (
-    <CartProvider>
-      <Router>
+    <Router>
+      <CartProvider>
         <div className="min-h-screen flex flex-col">
           <Navbar />
           <main className="flex-1">
@@ -30,8 +31,8 @@ function App() {
           <Footer />
           <CartDrawer />
         </div>
-      </Router>
-    </CartProvider>
+      </CartProvider>
+    </Router>
   );
 }
 
