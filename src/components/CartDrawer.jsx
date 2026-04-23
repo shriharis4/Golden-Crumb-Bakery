@@ -45,12 +45,12 @@ const CartDrawer = () => {
               {cart.map(item => (
                 <div key={item.id} className="flex gap-4 p-4 bg-[#FFF8DC] rounded-xl border-2 border-[#FFE066]">
                   <div className="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0">
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className="w-full h-full object-cover"
-                      onError={(e) => { e.target.src = '/img/chocolate-truffle-delight.jpg'; }}
-                    />
+<img
+                       src={item.image}
+                       alt={item.title}
+                       className="w-full h-full object-cover"
+                       onError={(e) => { e.target.src = '/public/img/chocolate-truffle-delight.jpg'; }}
+                     />
                   </div>
                   <div className="flex-1 min-w-0">
                     <h3 className="font-semibold text-[#4A2C2A] truncate">{item.title}</h3>

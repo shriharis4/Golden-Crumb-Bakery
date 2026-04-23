@@ -224,16 +224,16 @@ const Checkout = () => {
               <h2 className="text-xl font-Fustat font-bold text-[#4A2C2A] pb-4 border-b-2 border-[#FFE066]">Order Summary</h2>
               
               <div className="space-y-4 mt-4 max-h-64 overflow-y-auto">
-                {cart.map(item => (
-                  <div key={item.id} className="flex gap-3">
-                    <img src={item.image} alt={item.title} className="w-14 h-14 rounded-lg object-cover" onError={(e) => { e.target.src = '/img/chocolate-truffle-delight.jpg'; }} />
-                    <div className="flex-1 min-w-0">
-                      <h3 className="font-semibold text-[#4A2C2A] text-sm truncate">{item.title}</h3>
-                      <p className="text-[#8B5E3C] text-sm">Qty: {item.quantity}</p>
-                    </div>
-                    <span className="font-bold text-[#4A2C2A]">${(parseFloat(item.price.replace('$', '')) * item.quantity).toFixed(2)}</span>
-                  </div>
-                ))}
+{cart.map(item => (
+  <div key={item.id} className="flex gap-3">
+    <img src={item.image} alt={item.title} className="w-14 h-14 rounded-lg object-cover" onError={(e) => { e.target.src = '/public/img/chocolate-truffle-delight.jpg'; }} />
+    <div className="flex-1 min-w-0">
+      <h3 className="font-semibold text-[#4A2C2A] text-sm truncate">{item.title}</h3>
+      <p className="text-[#8B5E3C] text-sm">Qty: {item.quantity}</p>
+    </div>
+    <span className="font-bold text-[#4A2C2A]">${(parseFloat(item.price.replace('$', '')) * item.quantity).toFixed(2)}</span>
+  </div>
+))}
               </div>
 
               <div className="border-t-2 border-[#FFE066] mt-4 pt-4 space-y-2">
