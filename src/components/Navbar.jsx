@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import WhatsAppButton from './WhatsAppButton';
+import CartBadge from './CartBadge';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,8 +22,8 @@ const Navbar = () => {
               <span className="text-[#FFD84D] text-xl">🎂</span>
             </div>
             <div className="flex flex-col leading-tight">
-              <span className="text-xl font-Fustat font-bold text-[#4A2C2A]">Cake De Lite</span>
-              <span className="text-[10px] text-[#4A2C2A] font-medium">Delight In Every Bite</span>
+              <span className="text-xl font-Fustat font-bold text-[#4A2C2A]">Golden Crumb Bakery</span>
+              <span className="text-[10px] text-[#4A2C2A] font-medium">Artisan Cakes for Every Occasion</span>
             </div>
           </Link>
 
@@ -41,12 +41,7 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:block">
-            <WhatsAppButton 
-              message="I want to order a cake" 
-              className="bg-[#4A2C2A] text-white px-5 py-2.5 rounded-xl hover:bg-[#3a1f1d] transition-all hover:shadow-lg border-2 border-[#4A2C2A]"
-            >
-              Order Now
-            </WhatsAppButton>
+            <CartBadge />
           </div>
 
           <button 
@@ -75,13 +70,8 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
-            <div className="px-4 pt-3">
-              <WhatsAppButton 
-                message="I want to order a cake" 
-                className="w-full justify-center bg-[#4A2C2A] text-white"
-              >
-                Order Now
-              </WhatsAppButton>
+            <div className="px-4 pt-3" onClick={() => setIsMenuOpen(false)}>
+              <CartBadge />
             </div>
           </div>
         )}

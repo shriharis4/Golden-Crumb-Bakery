@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import WhatsAppButton from '../components/WhatsAppButton';
 import { Link } from 'react-router-dom';
 import { businessInfo } from '../data';
 import ScrollAnimation from '../components/ScrollAnimation';
@@ -50,13 +49,10 @@ const Contact = () => {
                 </svg>
               </div>
               <h2 className="text-3xl font-Fustat font-bold text-[#4A2C2A] mb-4">Thank You!</h2>
-              <p className="text-[#4A2C2A]/70 mb-8">We've received your message and will get back to you soon.</p>
-              <WhatsAppButton
-                message="Hi Cake De Lite, I have an inquiry"
-                className="bg-[#25D366] text-white px-8 py-4 rounded-2xl text-lg hover:bg-green-600 transition-all shadow-lg hover:shadow-xl border-2 border-[#25D366]"
-              >
-                Chat on WhatsApp
-              </WhatsAppButton>
+              <p className="text-[#4A2C2A]/70 mb-8">We've received your message and will get back to you shortly.</p>
+              <Link to="/cakes" className="mx-auto text-lg px-8 py-4">
+                Browse Cakes
+              </Link>
               <Link to="/" className="block mt-6 text-[#8B5E3C] hover:text-[#4A2C2A] font-semibold transition-colors border-b-2 border-[#8B5E3C] hover:border-[#4A2C2A] w-fit mx-auto">
                 ← Return to Home
               </Link>
@@ -184,7 +180,7 @@ const Contact = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border-2 border-[#FFE066] rounded-xl focus:ring-2 focus:ring-[#8B5E3C] focus:border-transparent bg-[#FFF8DC]/50 text-[#4A2C2A]"
-                      placeholder="+91 98765 43210"
+                      placeholder="+1 (555) 123-4567"
                       required
                     />
                   </div>
@@ -227,12 +223,9 @@ const Contact = () => {
                   >
                     {isSubmitting ? 'Sending...' : 'Send Message'}
                   </button>
-                  <WhatsAppButton
-                    message="Hi Cake De Lite, I have an inquiry"
-                    className="bg-[#25D366] text-white px-8 py-4 rounded-2xl text-lg hover:bg-green-600 transition-all shadow-lg hover:shadow-xl border-2 border-[#25D366]"
-                  >
-                    Chat Now
-                  </WhatsAppButton>
+                  <Link to="/cakes" className="flex-1 justify-center text-lg px-8 py-4">
+                    Browse Cakes
+                  </Link>
                 </div>
               </form>
             </div>

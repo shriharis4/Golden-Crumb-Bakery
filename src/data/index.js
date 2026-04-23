@@ -11,7 +11,7 @@ export const cakes = [
     id: 1,
     category: "Birthday Cakes",
     title: "Chocolate Truffle Delight",
-    price: "₹699",
+    price: "$15",
     description: "Rich chocolate ganache cake with Belgian chocolate layers and cocoa dusting",
     image: "/img/chocolate-truffle-delight.jpg"
   },
@@ -19,7 +19,7 @@ export const cakes = [
     id: 2,
     category: "Birthday Cakes",
     title: "Strawberry Cream Dream",
-    price: "₹599",
+    price: "$13",
     description: "Fresh strawberry layers with vanilla cream and white chocolate drizzle",
     image: "/img/strawberry-cream-dream.jpg"
   },
@@ -27,7 +27,7 @@ export const cakes = [
     id: 3,
     category: "Birthday Cakes",
     title: "Rainbow Celebration Cake",
-    price: "₹799",
+    price: "$18",
     description: "Colorful rainbow layers with premium buttercream and edible sparkles",
     image: "/img/rainbow-celebration-cake.jpg"
   },
@@ -35,7 +35,7 @@ export const cakes = [
     id: 4,
     category: "Birthday Cakes",
     title: "Pineapple Fresh Cake",
-    price: "₹549",
+    price: "$12",
     description: "Fresh pineapple chunks with light vanilla sponge and cream frosting",
     image: "/img/pineapple-fresh-cake.jpg"
   },
@@ -43,7 +43,7 @@ export const cakes = [
     id: 5,
     category: "Birthday Cakes",
     title: "Red Velvet Royale",
-    price: "₹749",
+    price: "$16",
     description: "Classic red velvet with cream cheese frosting and ruby red berries",
     image: "/img/red-velvet-royale.jpg"
   },
@@ -51,7 +51,7 @@ export const cakes = [
     id: 6,
     category: "Birthday Cakes",
     title: "Blueberry Cheesecake",
-    price: "₹649",
+    price: "$14",
     description: "Creamy cheesecake topped with fresh blueberries and berry compote",
     image: "/img/blueberry-cheesecake.jpg"
   },
@@ -59,7 +59,7 @@ export const cakes = [
     id: 7,
     category: "Wedding Cakes",
     title: "Royal White Wedding",
-    price: "₹3,499",
+    price: "$76",
     description: "Elegant three-tier white fondant cake with sugar flowers and gold accents",
     image: "/img/royal-white-wedding.jpg"
   },
@@ -67,7 +67,7 @@ export const cakes = [
     id: 8,
     category: "Wedding Cakes",
     title: "Rose Gold Elegance",
-    price: "₹4,499",
+    price: "$98",
     description: "Luxurious rose gold metallic finish with fresh rose arrangements",
     image: "/img/rose-gold-elegance.jpg"
   },
@@ -75,7 +75,7 @@ export const cakes = [
     id: 9,
     category: "Wedding Cakes",
     title: "Floral Cascade Wedding",
-    price: "₹3,999",
+    price: "$86",
     description: "Stunning cascade of fresh edible flowers on premium vanilla fondant",
     image: "/img/floral-cascade-wedding.jpg"
   },
@@ -83,7 +83,7 @@ export const cakes = [
     id: 10,
     category: "Wedding Cakes",
     title: "Pearl White Wedding",
-    price: "₹4,999",
+    price: "$108",
     description: "Exquisite white cake adorned with edible pearls and cascading blooms",
     image: "/img/pearl-white-wedding.jpg"
   },
@@ -91,7 +91,7 @@ export const cakes = [
     id: 11,
     category: "Custom Cakes",
     title: "Photo Print Cake",
-    price: "₹899",
+    price: "$20",
     description: "Custom edible photo printing on your choice of cake base and flavor",
     image: "/img/photo-print-cake.jpg"
   },
@@ -99,7 +99,7 @@ export const cakes = [
     id: 12,
     category: "Custom Cakes",
     title: "Theme Designer Cake",
-    price: "₹999",
+    price: "$22",
     description: "Custom themed cake for kids - characters, superheroes, cartoons and more",
     image: "/img/theme-designer-cake.jpg"
   },
@@ -107,7 +107,7 @@ export const cakes = [
     id: 13,
     category: "Custom Cakes",
     title: "Black Forest Special",
-    price: "₹749",
+    price: "$16",
     description: "Classic black forest with cherry liqueur, chocolate shavings and cream",
     image: "/img/black-forest-special.jpg"
   },
@@ -115,7 +115,7 @@ export const cakes = [
     id: 14,
     category: "Custom Cakes",
     title: "Butterscotch Caramel",
-    price: "₹699",
+    price: "$14",
     description: "Rich butterscotch cake with caramel drizzle and crunchy nuts",
     image: "/img/butterscotch-caramel.jpg"
   },
@@ -123,7 +123,7 @@ export const cakes = [
     id: 15,
     category: "Cupcakes",
     title: "Vanilla Butter Cupcakes",
-    price: "₹50",
+    price: "$7",
     description: "Classic vanilla cupcakes with swirl buttercream frosting (per piece)",
     image: "/img/vanilla-butter-cupcakes.jpg"
   },
@@ -131,7 +131,7 @@ export const cakes = [
     id: 16,
     category: "Cupcakes",
     title: "Chocolate Truffle Cupcakes",
-    price: "₹55",
+    price: "$7",
     description: "Rich chocolate cupcakes with chocolate ganache topping (per piece)",
     image: "/img/chocolate-truffle-cupcakes.jpg"
   },
@@ -139,7 +139,7 @@ export const cakes = [
     id: 17,
     category: "Cupcakes",
     title: "Red Velvet Cupcakes",
-    price: "₹55",
+    price: "$7",
     description: "Classic red velvet with cream cheese frosting (per piece)",
     image: "/img/red-velvet-cupcakes.jpg"
   },
@@ -147,7 +147,7 @@ export const cakes = [
     id: 18,
     category: "Cupcakes",
     title: "Strawberry Cupcakes",
-    price: "₹50",
+    price: "$7",
     description: "Fresh strawberry cupcakes with strawberry cream topping (per piece)",
     image: "/img/strawberry-cupcakes.jpg"
   }
@@ -271,28 +271,28 @@ export const galleryImages = [
 export const testimonials = [
   {
     id: 1,
-    name: "Priya Sharma",
+    name: "Sarah Mitchell",
     rating: 5,
     text: "The best cake I've ever had! The chocolate truffle was absolutely divine. Will definitely order again!",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
   },
   {
     id: 2,
-    name: "Rahul Verma",
+    name: "Michael Chen",
     rating: 5,
     text: "Ordered a custom birthday cake for my daughter. The design was exactly what we wanted. Highly recommended!",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
   },
   {
     id: 3,
-    name: "Anjali Patel",
+    name: "Emily Rodriguez",
     rating: 5,
-    text: "Excellent service and amazing cakes! The wedding cake was the highlight of our reception. Thank you Cake De Lite!",
+    text: "Excellent service and amazing cakes! The wedding cake was the highlight of our reception. Thank you Golden Crumb!",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop"
   },
   {
     id: 4,
-    name: "Vikram Singh",
+    name: "David Thompson",
     rating: 4,
     text: "Great variety of cupcakes! My kids loved them. Quick delivery and fresh products. Will order more!",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop"
@@ -336,18 +336,16 @@ export const flavors = [
 ];
 
 export const cakeSizes = [
-  'Half kg (Serves 4-6)', '1 kg (Serves 8-12)', '1.5 kg (Serves 15-20)', 
-  '2 kg (Serves 25-30)', '2.5 kg (Serves 30-35)', '3 kg (Serves 40-45)', 'Custom Size'
+  '1 lb (Serves 4-6)', '2 lb (Serves 8-12)', '3 lb (Serves 15-20)', 
+  '4 lb (Serves 25-30)', '5 lb (Serves 30-35)', '6 lb (Serves 40-45)', 'Custom Size'
 ];
 
 export const businessInfo = {
-  name: "Cake De Lite",
-  phone: "+91 8088366098",
-  email: "cakedelite@gmail.com",
-  address: "Opp. KSRTC Bus Stand, Raichur, Karnataka 584101",
-  hours: "Every Day: 8:00 AM - 9:00 PM"
+  name: "Golden Crumb Bakery",
+  phone: "+1 (347) 555-9821",
+  email: "orders@goldencrumbbakery.com",
+  address: "123 Maple Street, Brooklyn, NY 11201",
+  hours: "Every Day: 8:00 AM - 8:00 PM"
 };
-
-export const WHATSAPP_NUMBER = "918088366098";
 
 export const fallbackImage = "/img/chocolate-truffle-delight.jpg";

@@ -2,7 +2,7 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Cake De Lite Website - Tech Stack & Structure
+## ABC Cakes Website - Tech Stack & Structure
 
 This is a modern responsive cake shop website built with:
 - React (functional components)

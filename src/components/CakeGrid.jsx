@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { cakes, fallbackImage } from '../data';
-import WhatsAppButton from './WhatsAppButton';
 import ScrollAnimation from './ScrollAnimation';
+import AddToCartButton from './AddToCartButton';
 
 const CakeGrid = () => {
   return (
@@ -40,12 +40,9 @@ const CakeGrid = () => {
                   </div>
                   
                   <div className="absolute bottom-3 right-3 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-                    <WhatsAppButton
-                      message={`I want to order the ${cake.title} (${cake.price})`}
-                      className="bg-[#25D366] text-white px-4 py-2 rounded-full text-sm shadow-lg"
-                    >
-                      Quick Order
-                    </WhatsAppButton>
+                    <AddToCartButton cake={cake} className="text-sm px-4 py-2">
+                      Add to Cart
+                    </AddToCartButton>
                   </div>
                 </div>
                 

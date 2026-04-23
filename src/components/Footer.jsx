@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import WhatsAppButton from './WhatsAppButton';
 import { businessInfo } from '../data';
 
 const Footer = () => {
@@ -18,12 +17,12 @@ const Footer = () => {
                 <span className="text-2xl">🎂</span>
               </div>
               <div>
-                <h3 className="text-xl font-Fustat font-bold">Cake De Lite</h3>
-                <p className="text-[#FFF8DC]/60 text-xs">Delight In Every Bite</p>
+                <h3 className="text-xl font-Fustat font-bold">Golden Crumb Bakery</h3>
+                <p className="text-[#FFF8DC]/60 text-xs">Artisan Cakes for Every Occasion</p>
               </div>
             </div>
             <p className="text-[#FFF8DC]/80 text-sm leading-relaxed mb-6">
-              Bringing sweetness to every moment with our handcrafted cakes made fresh daily with love and passion.
+              Brooklyn's favorite artisan bakery, crafting premium custom cakes made fresh daily with love and passion.
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#25D366] transition-colors border border-white/20">
@@ -57,9 +56,9 @@ const Footer = () => {
                 <span className="w-1.5 h-1.5 bg-[#FFE066] rounded-full" />
                 Gallery
               </Link></li>
-              <li><Link to="/contact" className="text-[#FFF8DC]/80 hover:text-[#FFE066] transition-colors text-sm flex items-center gap-2">
+              <li><Link to="/checkout" className="text-[#FFF8DC]/80 hover:text-[#FFE066] transition-colors text-sm flex items-center gap-2">
                 <span className="w-1.5 h-1.5 bg-[#FFE066] rounded-full" />
-                Contact
+                Checkout
               </Link></li>
             </ul>
           </div>
@@ -103,19 +102,13 @@ const Footer = () => {
             </ul>
           </div>
           
-          <div>
-            <h4 className="font-Fustat font-semibold mb-6 text-lg">Order Now</h4>
-            <p className="text-[#FFF8DC]/80 text-sm mb-6">
-              Ready to place your order? Chat with us on WhatsApp for quick ordering!
-            </p>
-            <WhatsAppButton message="Hi Cake De Lite, I want to place an order" className="bg-[#25D366] hover:bg-green-600 border-2 border-[#25D366]" />
-          </div>
+          
         </div>
         
         <div className="border-t border-[#FFF8DC]/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-[#FFF8DC]/60 text-sm">
-              © 2026 Cake De Lite. All rights reserved.
+              © 2026 Golden Crumb Bakery. All rights reserved.
             </p>
             <p className="text-[#FFF8DC]/60 text-sm flex items-center gap-2">
               Made with <span className="text-red-400">❤️</span> for cake lovers

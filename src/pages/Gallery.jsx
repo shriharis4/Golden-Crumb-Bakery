@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { createWhatsAppLink } from '../utils/whatsapp';
+import { Link } from 'react-router-dom';
 import { galleryImages, fallbackImage } from '../data';
 import ScrollAnimation from '../components/ScrollAnimation';
 
@@ -10,11 +10,6 @@ const Gallery = () => {
   const filteredImages = activeFilter === 'all'
     ? galleryImages
     : galleryImages.filter(img => img.category === activeFilter);
-
-  const handleOrder = (image) => {
-    const message = `Hi Cake De Lite! I'm interested in ordering a cake similar to "${image.title}" from your gallery. Can you help me?`;
-    window.open(createWhatsAppLink(message), '_blank');
-  };
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -62,12 +57,9 @@ const Gallery = () => {
               <h3 className="text-3xl font-Fustat font-bold text-[#4A2C2A] mb-3">{selectedImage.title}</h3>
               <p className="text-[#4A2C2A]/70 text-lg mb-6 max-w-2xl mx-auto">{selectedImage.description}</p>
               <div className="flex justify-center gap-4">
-                <button
-                  onClick={() => handleOrder(selectedImage)}
-                  className="bg-[#8B5E3C] text-white px-8 py-3 rounded-full hover:bg-[#4A2C2A] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 font-semibold border-2 border-[#8B5E3C] hover:border-[#4A2C2A]"
-                >
-                  Order Similar Cake
-                </button>
+                <Link to="/cakes" className="text-base px-8 py-3">
+                  Order This
+                </Link>
                 <button
                   onClick={() => setSelectedImage(null)}
                   className="border-2 border-[#4A2C2A] text-[#4A2C2A] px-8 py-3 rounded-full hover:bg-[#4A2C2A] hover:text-white transition-all duration-300 font-semibold"

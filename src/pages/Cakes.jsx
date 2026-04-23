@@ -1,7 +1,8 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { cakes, cakeCategories, fallbackImage } from '../data';
-import WhatsAppButton from '../components/WhatsAppButton';
 import ScrollAnimation from '../components/ScrollAnimation';
+import AddToCartButton from '../components/AddToCartButton';
 
 const Cakes = () => {
   const [activeFilter, setActiveFilter] = useState('All');
@@ -64,12 +65,9 @@ const Cakes = () => {
                   </div>
                   
                   <div className="absolute bottom-3 right-3 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-                    <WhatsAppButton
-                      message={`I want to order the ${cake.title}`}
-                      className="bg-[#25D366] text-white px-4 py-2 rounded-full text-sm shadow-lg"
-                    >
-                      Quick Order
-                    </WhatsAppButton>
+                    <AddToCartButton cake={cake} className="text-sm px-4 py-2">
+                      Add to Cart
+                    </AddToCartButton>
                   </div>
                 </div>
                 
@@ -82,12 +80,9 @@ const Cakes = () => {
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-xl font-bold text-[#8B5E3C]">{cake.price}</span>
-                    <WhatsAppButton
-                      message={`I want to order the ${cake.title} (${cake.price})`}
-                      className="text-sm px-4 py-2"
-                    >
-                      Order
-                    </WhatsAppButton>
+                    <AddToCartButton cake={cake} className="text-sm px-4 py-2">
+                      Add to Cart
+                    </AddToCartButton>
                   </div>
                 </div>
               </div>

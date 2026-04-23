@@ -1,6 +1,6 @@
-import WhatsAppButton from './WhatsAppButton';
 import { Link } from 'react-router-dom';
 import ScrollAnimation from './ScrollAnimation';
+import CartBadge from './CartBadge';
 
 const CTABanner = () => {
   return (
@@ -26,17 +26,12 @@ const CTABanner = () => {
                 Order now and let us create something special for you!
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <WhatsAppButton 
-                  message="Hi Cake De Lite, I want to order a custom cake" 
-                  className="bg-[#FFD84D] text-[#4A2C2A] px-8 py-4 rounded-2xl text-lg hover:bg-[#FFE066] transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 font-semibold border-2 border-[#FFD84D]"
-                >
-                  Order Your Custom Cake
-                </WhatsAppButton>
+                <CartBadge />
                 <Link 
                   to="/custom"
                   className="inline-flex items-center justify-center border-2 border-[#FFD84D] text-[#FFD84D] px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-[#FFD84D] hover:text-[#4A2C2A] transition-all duration-300 border-2"
                 >
-                  Design Your Own
+                  Design Custom Cake
                 </Link>
               </div>
             </div>

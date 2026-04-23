@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { createWhatsAppLink } from '../utils/whatsapp';
 import { flavors, cakeSizes } from '../data';
 import ScrollAnimation from '../components/ScrollAnimation';
 
@@ -14,6 +13,7 @@ const CustomOrder = () => {
     referenceImage: null
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showThankYou, setShowThankYou] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -28,22 +28,34 @@ const CustomOrder = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const message = `Hello Cake De Lite! I'd like to place a custom order:
-
-👤 Name: ${formData.name}
-📱 Phone: ${formData.phone}
-📧 Email: ${formData.email || 'Not provided'}
-🧁 Flavor: ${formData.flavor}
-📏 Size: ${formData.size}
-🎨 Design: ${formData.designDescription}
-📎 Reference: ${formData.referenceImage || 'None'}
-
-Please confirm my order. Thank you!`;
-
-    const whatsappLink = createWhatsAppLink(message);
-    window.open(whatsappLink, '_blank');
-    setIsSubmitting(false);
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setShowThankYou(true);
+    }, 1500);
   };
+
+  if (showThankYou) {
+    return (
+      <section className="bg-gradient-to-b from-[#FFE066] to-[#FFF8DC] py-20">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <ScrollAnimation>
+            <div className="bg-white rounded-3xl p-12 shadow-xl border-2 border-[#FFE066]">
+              <div className="w-20 h-20 bg-[#FFE066] rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-[#E6C442]">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-[#4A2C2A]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <h2 className="text-3xl font-Fustat font-bold text-[#4A2C2A] mb-4">Thank You!</h2>
+              <p className="text-[#4A2C2A]/70 mb-8">We've received your custom order and will contact you within 24 hours to confirm the details.</p>
+              <Link to="/" className="block mt-6 text-[#8B5E3C] hover:text-[#4A2C2A] font-semibold transition-colors border-b-2 border-[#8B5E3C] hover:border-[#4A2C2A] w-fit mx-auto">
+                ← Return to Home
+              </Link>
+            </div>
+          </ScrollAnimation>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="bg-gradient-to-b from-[#FFE066] to-[#FFF8DC] min-h-screen py-20 overflow-hidden">
@@ -92,7 +104,7 @@ Please confirm my order. Thank you!`;
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border-2 border-[#FFE066] rounded-xl focus:ring-2 focus:ring-[#8B5E3C] focus:border-transparent bg-[#FFF8DC]/50 text-[#4A2C2A]"
-                    placeholder="+91 98765 43210"
+                    placeholder="+1 (555) 123-4567"
                     required
                   />
                 </div>
@@ -197,11 +209,11 @@ Please confirm my order. Thank you!`;
                 disabled={isSubmitting}
                 className="w-full bg-[#4A2C2A] text-white px-8 py-5 rounded-2xl text-lg font-semibold hover:bg-[#3a1f1d] transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 disabled:opacity-50 border-2 border-[#4A2C2A]"
               >
-                {isSubmitting ? 'Redirecting...' : 'Submit & Order via WhatsApp'}
+                {isSubmitting ? 'Submitting...' : 'Submit Order'}
               </button>
 
               <p className="text-center text-[#4A2C2A]/60 text-sm">
-                After submitting, you'll be redirected to WhatsApp to confirm your order
+                We'll contact you within 24 hours to confirm your custom order details
               </p>
             </form>
           </div>
