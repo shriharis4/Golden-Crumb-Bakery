@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useCart } from '../hooks/useCart';
+import { useCart } from "../context/CartContext";
 import ScrollAnimation from '../components/ScrollAnimation';
 import { generateOrderNumber } from '../utils/orderUtils';
 

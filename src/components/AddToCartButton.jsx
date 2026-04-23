@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useCart } from '../hooks/useCart';
+import { useCart } from "../context/CartContext";
 
 const AddToCartButton = ({ cake, quantity = 1, className = '', children, variant = 'default' }) => {
   const { addToCart } = useCart();

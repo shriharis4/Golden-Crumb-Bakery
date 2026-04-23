@@ -1,4 +1,4 @@
-import { useCart } from '../hooks/useCart';
+import { useCart } from "../context/CartContext";
 
 const CartBadge = () => {
   const { getCartCount, setIsCartOpen } = useCart();
